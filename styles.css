@@ -158,3 +158,5 @@ h3{font-size:1.18rem;letter-spacing:-.02em}
   display:block;
 }
 .article-cover{overflow:hidden}
+
+.analysis-video{width:100%;height:auto;display:block;margin:22px 0 24px;border-radius:4px;background:#000}
