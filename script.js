@@ -34,3 +34,35 @@ document.querySelectorAll('[data-slideshow]').forEach((gallery) => {
     startX = null;
   }, {passive:true});
 });
+
+
+document.querySelectorAll('[data-video-slideshow]').forEach((gallery) => {
+  const slides = [...gallery.querySelectorAll('.video-slide')];
+  const counter = gallery.querySelector('.video-counter');
+  let current = 0;
+
+  const show = (index) => {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle('active', active);
+      if (!active) slide.querySelector('video')?.pause();
+    });
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+  };
+
+  gallery.querySelector('.prev')?.addEventListener('click', () => show(current - 1));
+  gallery.querySelector('.next')?.addEventListener('click', () => show(current + 1));
+
+  let startX = null;
+  gallery.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive:true});
+  gallery.addEventListener('touchend', (e) => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 45) show(current + (dx < 0 ? 1 : -1));
+    startX = null;
+  }, {passive:true});
+
+  show(0);
+});
