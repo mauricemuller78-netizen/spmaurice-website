@@ -259,3 +259,38 @@ h3{font-size:1.18rem;letter-spacing:-.02em}
   place-items:center;
 }
 .video-arrow:hover{border-color:var(--accent)}
+
+
+.lang-switcher{
+  display:flex;
+  align-items:center;
+  gap:3px;
+  padding:3px;
+  border:1px solid var(--line);
+  background:rgba(13,24,18,.9);
+  border-radius:999px;
+  margin-left:auto;
+  margin-right:18px;
+}
+.lang-switcher button{
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  min-width:34px;
+  height:28px;
+  padding:0 8px;
+  border-radius:999px;
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.05em;
+  cursor:pointer;
+}
+.lang-switcher button:hover{color:var(--text)}
+.lang-switcher button.active{
+  background:var(--accent);
+  color:#07100c;
+}
+@media(max-width:680px){
+  .lang-switcher{margin-left:auto;margin-right:10px}
+  .lang-switcher button{min-width:30px;padding:0 6px}
+}
