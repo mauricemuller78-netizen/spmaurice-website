@@ -304,3 +304,16 @@ h3{font-size:1.18rem;letter-spacing:-.02em}
   color:var(--text);
   border-bottom-color:var(--accent);
 }
+
+.series-cover-wrap{
+  margin-top:4px;
+  margin-bottom:18px;
+}
+.series-cover{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+  border:1px solid var(--line);
+  background:var(--panel);
+}
