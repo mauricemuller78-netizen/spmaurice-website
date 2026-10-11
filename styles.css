@@ -294,3 +294,13 @@ h3{font-size:1.18rem;letter-spacing:-.02em}
   .lang-switcher{margin-left:auto;margin-right:10px}
   .lang-switcher button{min-width:30px;padding:0 6px}
 }
+
+.series-link{
+  color:inherit;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+}
+.series-link:hover{
+  color:var(--text);
+  border-bottom-color:var(--accent);
+}
