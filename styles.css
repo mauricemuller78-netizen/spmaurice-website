@@ -393,3 +393,67 @@ h3{font-size:1.18rem;letter-spacing:-.02em}
   .video-analysis{padding:20px 18px 22px}
   .video-analysis h3{font-size:1.25rem}
 }
+
+
+/* Team analysis themes */
+body.theme-psg{
+  --bg:#071426;
+  --panel:#0c1c35;
+  --panel-2:#102442;
+  --line:#29405f;
+  --text:#f7f9fc;
+  --muted:#a9b7ca;
+  --accent:#e43d55;
+  --accent-2:#2e6fd0;
+  background:
+    radial-gradient(circle at 92% 8%,rgba(46,111,208,.16),transparent 28%),
+    radial-gradient(circle at 8% 42%,rgba(228,61,85,.07),transparent 24%),
+    var(--bg);
+}
+body.theme-psg .site-header{
+  background:rgba(7,20,38,.9);
+}
+body.theme-psg .lang-switcher{
+  background:rgba(12,28,53,.92);
+}
+body.theme-psg .lang-switcher button.active,
+body.theme-psg .button.primary{
+  background:var(--accent);
+  color:#fff;
+  border-color:var(--accent);
+}
+body.theme-psg .eyebrow,
+body.theme-psg .tag,
+body.theme-psg .text-link{
+  color:#ff5b70;
+}
+body.theme-psg .article-hero h1{
+  text-shadow:0 0 40px rgba(46,111,208,.10);
+}
+body.theme-psg .article-cover,
+body.theme-psg .analysis-slideshow,
+body.theme-psg .video-slideshow,
+body.theme-psg .media-block{
+  box-shadow:0 18px 60px rgba(0,0,0,.20);
+}
+body.theme-psg .video-analysis{
+  background:linear-gradient(135deg,var(--panel),#0d203d);
+}
+body.theme-psg .prose p,
+body.theme-psg .video-analysis p{
+  color:#d8e0eb;
+}
+body.theme-psg .video-arrow:hover,
+body.theme-psg .slide-arrow:hover,
+body.theme-psg .series-link:hover{
+  border-color:var(--accent);
+}
+body.theme-psg .nav a:hover,
+body.theme-psg .nav a.active{
+  color:#fff;
+}
+@media(max-width:680px){
+  body.theme-psg .nav{
+    background:#0a1930;
+  }
+}
