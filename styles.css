@@ -457,3 +457,10 @@ body.theme-psg .nav a.active{
     background:#0a1930;
   }
 }
+
+.media-block img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
