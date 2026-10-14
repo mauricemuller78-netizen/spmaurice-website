@@ -565,3 +565,31 @@ body.theme-mexico .nav a.active{color:#fff}
 @media(max-width:520px){
   .player-facts{grid-template-columns:1fr}
 }
+
+.scouting-card-media{
+  background:
+    radial-gradient(circle at 50% 34%,rgba(255,255,255,.06),transparent 30%),
+    linear-gradient(180deg,#0b1711,#09120d);
+  overflow:hidden;
+  padding:0;
+}
+.scouting-card-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center bottom;
+  transform:scale(.94);
+  transform-origin:center bottom;
+}
+.scouting-card-media::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:22%;
+  pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(7,16,12,.12));
+}
+.scouting-card-media{position:relative}
+@media(max-width:680px){
+  .scouting-card-media img{transform:scale(.9)}
+}
