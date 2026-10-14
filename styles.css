@@ -949,3 +949,35 @@ body.theme-mexico .nav a.active{color:#fff}
   display:block;
   object-fit:cover;
 }
+
+.real-heatmap{
+  position:relative;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:8px;
+  background:
+    linear-gradient(135deg,rgba(22,138,74,.16),rgba(255,255,255,.03) 45%,rgba(217,54,62,.14)),
+    #0b100d;
+  box-shadow:
+    0 18px 44px rgba(0,0,0,.28),
+    inset 0 0 0 1px rgba(255,255,255,.035);
+}
+.real-heatmap::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:18px;
+  padding:1px;
+  background:linear-gradient(120deg,rgba(22,138,74,.7),rgba(255,255,255,.12),rgba(217,54,62,.65));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+.real-heatmap img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+  object-fit:cover;
+}
