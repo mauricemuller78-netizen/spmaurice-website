@@ -464,3 +464,104 @@ body.theme-psg .nav a.active{
   object-fit:contain;
   display:block;
 }
+
+
+/* Mexico / Gilberto Mora scouting theme */
+body.theme-mexico{
+  --bg:#090f0c;
+  --panel:#101914;
+  --panel-2:#142019;
+  --line:#2a3a30;
+  --text:#f7f7f2;
+  --muted:#b5c1b9;
+  --accent:#d9363e;
+  --accent-2:#168a4a;
+  background:
+    radial-gradient(circle at 90% 8%,rgba(22,138,74,.14),transparent 28%),
+    radial-gradient(circle at 8% 38%,rgba(217,54,62,.10),transparent 24%),
+    var(--bg);
+}
+body.theme-mexico .site-header{background:rgba(9,15,12,.9)}
+body.theme-mexico .lang-switcher{background:rgba(16,25,20,.92)}
+body.theme-mexico .eyebrow,
+body.theme-mexico .tag,
+body.theme-mexico .text-link{color:#ef4d55}
+body.theme-mexico .lang-switcher button.active{
+  background:#168a4a;
+  color:#fff;
+}
+body.theme-mexico .nav a:hover,
+body.theme-mexico .nav a.active{color:#fff}
+
+.scouting-report{padding-bottom:40px}
+.scouting-profile{
+  display:grid;
+  grid-template-columns:minmax(320px,.9fr) 1.1fr;
+  gap:28px;
+  margin:10px 0 46px;
+}
+.scouting-photo{
+  border:1px solid var(--line);
+  background:var(--panel);
+  min-height:440px;
+  overflow:hidden;
+}
+.scouting-photo img{
+  width:100%;
+  height:100%;
+  min-height:440px;
+  object-fit:cover;
+  display:block;
+}
+.player-facts{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+  background:var(--panel);
+}
+.player-facts div{
+  padding:18px 20px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.player-facts span{
+  display:block;
+  color:var(--muted);
+  font-size:.75rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:7px;
+}
+.player-facts strong{font-size:1.05rem}
+.position-strip{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:26px 0 46px;
+}
+.position-strip span{
+  min-width:54px;
+  text-align:center;
+  padding:10px 13px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  font-size:.82rem;
+  font-weight:800;
+}
+.position-strip span.active{
+  background:linear-gradient(90deg,#168a4a 0 50%,#d9363e 50% 100%);
+  color:#fff;
+  border-color:transparent;
+}
+.report-placeholder{
+  color:var(--muted)!important;
+  font-style:italic;
+}
+@media(max-width:800px){
+  .scouting-profile{grid-template-columns:1fr}
+  .scouting-photo,.scouting-photo img{min-height:0}
+}
+@media(max-width:520px){
+  .player-facts{grid-template-columns:1fr}
+}
