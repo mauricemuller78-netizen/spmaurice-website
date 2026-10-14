@@ -981,3 +981,27 @@ body.theme-mexico .nav a.active{color:#fff}
   border-radius:12px;
   object-fit:cover;
 }
+
+.player-overview-visuals{
+  margin:10px 0 46px;
+  padding:14px;
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(22,138,74,.035),rgba(217,54,62,.02)),var(--panel);
+}
+.player-overview-visuals .scouting-profile{
+  margin:0;
+  gap:14px;
+}
+.player-overview-visuals .position-profile{
+  margin:14px 0 0;
+  gap:14px;
+}
+.player-overview-visuals .scouting-photo,
+.player-overview-visuals .player-facts,
+.player-overview-visuals .position-copy,
+.player-overview-visuals .mini-pitch{
+  border-color:rgba(255,255,255,.10);
+}
+@media(max-width:800px){
+  .player-overview-visuals{padding:10px}
+}
