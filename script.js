@@ -386,3 +386,34 @@ function applyLanguage(lang) {
 
 langSwitcher.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => applyLanguage(btn.dataset.lang)));
 applyLanguage(localStorage.getItem('spmaurice-language') || 'en');
+
+
+document.querySelectorAll('[data-player-data-slideshow]').forEach((gallery) => {
+  const slides = [...gallery.querySelectorAll('.player-data-slide')];
+  const tabs = [...gallery.querySelectorAll('.player-data-tabs button')];
+  const counter = gallery.querySelector('.player-data-counter');
+  let current = 0;
+
+  const show = (index) => {
+    if (!slides.length) return;
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+    tabs.forEach((tab, i) => tab.classList.toggle('active', i === current));
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+  };
+
+  gallery.querySelector('.player-data-arrow.prev')?.addEventListener('click', () => show(current - 1));
+  gallery.querySelector('.player-data-arrow.next')?.addEventListener('click', () => show(current + 1));
+  tabs.forEach((tab, i) => tab.addEventListener('click', () => show(i)));
+
+  let startX = null;
+  gallery.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, {passive:true});
+  gallery.addEventListener('touchend', (e) => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 45) show(current + (dx < 0 ? 1 : -1));
+    startX = null;
+  }, {passive:true});
+
+  show(0);
+});
