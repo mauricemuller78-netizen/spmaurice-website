@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Gilberto Mora heatmap">
+  <defs>
+    <clipPath id="pitchClip"><rect x="42" y="42" width="1116" height="636" rx="24"/></clipPath>
+    <filter id="blur24"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="blur18"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+    <linearGradient id="pitchBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151c18"/>
+      <stop offset="1" stop-color="#0d1310"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="#0b100d"/>
+  <rect x="42" y="42" width="1116" height="636" rx="24" fill="url(#pitchBg)" stroke="#3a4740" stroke-width="4"/>
+
+  <g clip-path="url(#pitchClip)">
+    <!-- diffuse green activity -->
+    <g filter="url(#blur24)" opacity=".95">
+      <ellipse cx="205" cy="160" rx="85" ry="58" fill="#00b967"/>
+      <ellipse cx="340" cy="145" rx="100" ry="72" fill="#00c56f"/>
+      <ellipse cx="505" cy="175" rx="110" ry="78" fill="#04b968"/>
+      <ellipse cx="700" cy="150" rx="112" ry="76" fill="#00c970"/>
+      <ellipse cx="865" cy="175" rx="110" ry="74" fill="#00b966"/>
+      <ellipse cx="1010" cy="220" rx="90" ry="66" fill="#00be6a"/>
+
+      <ellipse cx="180" cy="330" rx="80" ry="72" fill="#00b764"/>
+      <ellipse cx="350" cy="315" rx="120" ry="88" fill="#00c66f"/>
+      <ellipse cx="555" cy="330" rx="128" ry="98" fill="#00b965"/>
+      <ellipse cx="760" cy="330" rx="120" ry="88" fill="#00c86f"/>
+      <ellipse cx="970" cy="345" rx="115" ry="86" fill="#00ba68"/>
+
+      <ellipse cx="230" cy="520" rx="95" ry="66" fill="#00b966"/>
+      <ellipse cx="420" cy="530" rx="125" ry="78" fill="#00c76f"/>
+      <ellipse cx="640" cy="540" rx="135" ry="86" fill="#00b965"/>
+      <ellipse cx="850" cy="520" rx="125" ry="82" fill="#00c66e"/>
+      <ellipse cx="1035" cy="535" rx="85" ry="62" fill="#00b865"/>
+    </g>
+
+    <!-- yellow/orange concentration -->
+    <g filter="url(#blur18)" opacity=".96">
+      <ellipse cx="445" cy="155" rx="62" ry="46" fill="#f2d431"/>
+      <ellipse cx="610" cy="170" rx="74" ry="52" fill="#e9d12c"/>
+      <ellipse cx="770" cy="170" rx="66" ry="48" fill="#f0ce2d"/>
+
+      <ellipse cx="340" cy="290" rx="70" ry="56" fill="#f3b42f"/>
+      <ellipse cx="500" cy="335" rx="92" ry="70" fill="#f5a62c"/>
+      <ellipse cx="720" cy="295" rx="72" ry="58" fill="#efc42f"/>
+      <ellipse cx="910" cy="350" rx="82" ry="60" fill="#f2b832"/>
+
+      <ellipse cx="420" cy="470" rx="72" ry="54" fill="#eac82d"/>
+      <ellipse cx="690" cy="470" rx="74" ry="56" fill="#f0c12e"/>
+      <ellipse cx="900" cy="490" rx="70" ry="52" fill="#e8c52d"/>
+    </g>
+
+    <!-- hottest zones -->
+    <g filter="url(#blur12)" opacity=".98">
+      <ellipse cx="505" cy="350" rx="48" ry="42" fill="#ff6b2f"/>
+      <ellipse cx="405" cy="285" rx="38" ry="34" fill="#ff7a2e"/>
+      <ellipse cx="870" cy="340" rx="40" ry="34" fill="#ff7f2f"/>
+      <ellipse cx="610" cy="160" rx="32" ry="28" fill="#ff9d2d"/>
+      <ellipse cx="315" cy="520" rx="30" ry="24" fill="#f59e2e"/>
+    </g>
+  </g>
+
+  <!-- pitch markings -->
+  <g fill="none" stroke="#46524c" stroke-width="4" opacity=".9">
+    <line x1="600" y1="42" x2="600" y2="678"/>
+    <circle cx="600" cy="360" r="92"/>
+    <circle cx="600" cy="360" r="5" fill="#46524c"/>
+    <rect x="42" y="178" width="185" height="364"/>
+    <rect x="973" y="178" width="185" height="364"/>
+    <rect x="42" y="264" width="76" height="192"/>
+    <rect x="1082" y="264" width="76" height="192"/>
+    <path d="M227 286a100 100 0 0 1 0 148"/>
+    <path d="M973 286a100 100 0 0 0 0 148"/>
+  </g>
+</svg>
