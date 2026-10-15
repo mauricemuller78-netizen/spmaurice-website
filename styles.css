@@ -1006,16 +1006,18 @@ body.theme-mexico .nav a.active{color:#fff}
   .player-overview-visuals{padding:10px}
 }
 
-.player-data-slides{min-height:680px}
+.player-data-slides{height:790px;min-height:790px;overflow:hidden}
 .player-data-slide.active{
   display:flex;
   flex-direction:column;
-  min-height:680px;
+  height:100%;
+  min-height:790px;
+  overflow-y:auto;
 }
 .player-data-slide .data-slide-copy{
   margin:0 0 24px;
 }
 @media(max-width:760px){
-  .player-data-slides{min-height:0}
-  .player-data-slide.active{min-height:0}
+  .player-data-slides{height:auto;min-height:0;overflow:visible}
+  .player-data-slide.active{height:auto;min-height:0;overflow:visible}
 }
