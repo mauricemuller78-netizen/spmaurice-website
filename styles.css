@@ -1023,66 +1023,75 @@ body.theme-mexico .nav a.active{color:#fff}
 }
 
 
-/* Real Madrid 2023/24 — restrained white, silver, red, black and gold */
+/* Real Madrid 2023/24 — white, silver, black, red and gold */
 body.theme-real{
-  --bg:#08090c;
-  --panel:#141518;
-  --panel-2:#202126;
-  --line:#44444b;
-  --text:#f7f7f7;
-  --muted:#c3c4cc;
-  --accent:#d9b85e;
-  --accent-2:#b99b4c;
+  --bg:#f7f7f8;
+  --panel:#fff;
+  --panel-2:#efeff1;
+  --line:#dadbe0;
+  --text:#17181c;
+  --muted:#565960;
+  --accent:#916b22;
+  --accent-2:#b18c44;
+  color:var(--text);
   background:
-    radial-gradient(ellipse at 86% 5%,rgba(189,22,49,.15),transparent 35%),
-    radial-gradient(ellipse at 10% 30%,rgba(214,183,95,.11),transparent 38%),
-    linear-gradient(180deg,#101116 0%,#090a0d 48%,#101115 100%);
+    radial-gradient(ellipse at 90% 5%,rgba(177,22,48,.055),transparent 36%),
+    radial-gradient(ellipse at 10% 27%,rgba(199,167,94,.10),transparent 37%),
+    linear-gradient(180deg,#fff 0%,#f7f7f8 52%,#efeff2 100%);
   background-attachment:fixed;
 }
 .theme-real .site-header{
-  background:rgba(11,12,16,.91);
-  border-bottom:1px solid rgba(212,212,221,.20);
+  background:rgba(255,255,255,.94);
+  border-bottom:1px solid #dedfe3;
 }
-.theme-real .brand{color:#fff}
-.theme-real .nav a.active{color:#e3c779}
+.theme-real .brand{color:#17181c}
+.theme-real .nav a{color:#53555d}
+.theme-real .nav a.active,.theme-real .nav a:hover{color:#a20d2b}
+.theme-real .nav-toggle{color:#17181c;background:#fff}
 .theme-real .article-hero{
-  border-bottom:1px solid rgba(206,207,218,.17);
+  border-bottom:1px solid #dddde2;
   padding-bottom:38px;
 }
-.theme-real .article-hero h1{color:#fff}
+.theme-real .article-hero h1,
+.theme-real .prose h2{color:#16171a}
 .theme-real .article-hero .eyebrow,
-.theme-real .tag{color:#e2c776}
-.theme-real .series-link{color:#e2c776}
+.theme-real .tag{color:#947024}
+.theme-real .series-link{color:#937024}
 .theme-real .series-link:hover,
-.theme-real .text-link:hover{color:#fff}
+.theme-real .text-link:hover{color:#ae1236}
 .theme-real .prose h2{
-  color:#fff;
-  border-left:3px solid #bf1535;
+  border-left:3px solid #ad1635;
   padding-left:18px;
 }
-.theme-real .prose h3{color:#dedee3}
-.theme-real .prose p{color:#d4d4da}
-.theme-real .prose strong{color:#f8f2e1}
+.theme-real .prose h3{color:#303138}
+.theme-real .prose p{color:#404149}
+.theme-real .prose strong{color:#17181c}
+.theme-real .page-copy,.theme-real .article-meta{color:#575962}
 .theme-real .article-cover,
 .theme-real .analysis-slideshow,
 .theme-real .media-block{
-  border-color:rgba(217,217,228,.23);
-  background:linear-gradient(135deg,#1e1f24,#0c0d11);
-  box-shadow:0 18px 44px rgba(0,0,0,.32);
+  border-color:#d5d5db;
+  background:#fff;
+  box-shadow:0 14px 35px rgba(20,21,26,.09);
 }
 .theme-real .slideshow-footer{
-  background:linear-gradient(90deg,rgba(206,209,215,.08),rgba(215,178,82,.05),rgba(192,15,44,.08));
-  border-color:rgba(217,217,228,.18);
+  background:linear-gradient(90deg,#f8f8fa,#f4f0e7,#f9f3f5);
+  border-color:#d8d8df;
+  color:#414149;
 }
+.theme-real .slide-counter{color:#585a61}
 .theme-real .slide-arrow{
-  background:#191a20;
-  color:#fff;
-  border-color:rgba(220,221,231,.27);
+  background:#fff;
+  color:#202126;
+  border:1px solid #cfd0d6;
 }
-.theme-real .slide-arrow:hover{border-color:#d6b75f;color:#f5d477}
-.theme-real .slide-dots .dot.active{background:#cfad51;border-color:#cfad51}
-.theme-real .text-link{color:#e2c776}
+.theme-real .slide-arrow:hover{border-color:#ac852e;color:#9e1533}
+.theme-real .slide-dots .dot{background:#d0d0d5;border-color:#bfc0c6}
+.theme-real .slide-dots .dot.active{background:#b58c37;border-color:#b58c37}
+.theme-real .text-link{color:#977123}
 .theme-real .site-footer{
-  background:rgba(9,10,14,.64);
-  border-color:rgba(215,215,225,.18);
+  background:rgba(255,255,255,.79);
+  border-color:#dedfe3;
 }
+.theme-real .site-footer p,
+.theme-real .site-footer a{color:#565960}
