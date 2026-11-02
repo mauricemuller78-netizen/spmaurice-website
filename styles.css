@@ -1021,3 +1021,68 @@ body.theme-mexico .nav a.active{color:#fff}
   .player-data-slides{height:auto;min-height:0;overflow:visible}
   .player-data-slide.active{height:auto;min-height:0;overflow:visible}
 }
+
+
+/* Real Madrid 2023/24 — restrained white, silver, red, black and gold */
+body.theme-real{
+  --bg:#08090c;
+  --panel:#141518;
+  --panel-2:#202126;
+  --line:#44444b;
+  --text:#f7f7f7;
+  --muted:#c3c4cc;
+  --accent:#d9b85e;
+  --accent-2:#b99b4c;
+  background:
+    radial-gradient(ellipse at 86% 5%,rgba(189,22,49,.15),transparent 35%),
+    radial-gradient(ellipse at 10% 30%,rgba(214,183,95,.11),transparent 38%),
+    linear-gradient(180deg,#101116 0%,#090a0d 48%,#101115 100%);
+  background-attachment:fixed;
+}
+.theme-real .site-header{
+  background:rgba(11,12,16,.91);
+  border-bottom:1px solid rgba(212,212,221,.20);
+}
+.theme-real .brand{color:#fff}
+.theme-real .nav a.active{color:#e3c779}
+.theme-real .article-hero{
+  border-bottom:1px solid rgba(206,207,218,.17);
+  padding-bottom:38px;
+}
+.theme-real .article-hero h1{color:#fff}
+.theme-real .article-hero .eyebrow,
+.theme-real .tag{color:#e2c776}
+.theme-real .series-link{color:#e2c776}
+.theme-real .series-link:hover,
+.theme-real .text-link:hover{color:#fff}
+.theme-real .prose h2{
+  color:#fff;
+  border-left:3px solid #bf1535;
+  padding-left:18px;
+}
+.theme-real .prose h3{color:#dedee3}
+.theme-real .prose p{color:#d4d4da}
+.theme-real .prose strong{color:#f8f2e1}
+.theme-real .article-cover,
+.theme-real .analysis-slideshow,
+.theme-real .media-block{
+  border-color:rgba(217,217,228,.23);
+  background:linear-gradient(135deg,#1e1f24,#0c0d11);
+  box-shadow:0 18px 44px rgba(0,0,0,.32);
+}
+.theme-real .slideshow-footer{
+  background:linear-gradient(90deg,rgba(206,209,215,.08),rgba(215,178,82,.05),rgba(192,15,44,.08));
+  border-color:rgba(217,217,228,.18);
+}
+.theme-real .slide-arrow{
+  background:#191a20;
+  color:#fff;
+  border-color:rgba(220,221,231,.27);
+}
+.theme-real .slide-arrow:hover{border-color:#d6b75f;color:#f5d477}
+.theme-real .slide-dots .dot.active{background:#cfad51;border-color:#cfad51}
+.theme-real .text-link{color:#e2c776}
+.theme-real .site-footer{
+  background:rgba(9,10,14,.64);
+  border-color:rgba(215,215,225,.18);
+}
