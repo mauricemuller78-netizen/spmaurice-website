@@ -1121,6 +1121,8 @@ body.theme-real{
 }
 .featured-rotator > .featured-slide{
   grid-area:1 / 1;
+  display:flex;
+  flex-direction:column;
   min-width:0;
   opacity:0;
   visibility:hidden;
