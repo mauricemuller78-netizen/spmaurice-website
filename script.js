@@ -417,3 +417,54 @@ document.querySelectorAll('[data-player-data-slideshow]').forEach((gallery) => {
 
   show(0);
 });
+
+
+// Alternate the homepage's featured team analyses without changing the other cards.
+document.querySelectorAll('[data-featured-rotator]').forEach((rotator) => {
+  const slides = [...rotator.querySelectorAll('[data-featured-slide]')];
+  const dots = [...rotator.querySelectorAll('[data-featured-dot]')];
+  if (slides.length < 2) return;
+
+  let current = 0;
+  let intervalId = null;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  const show = (index) => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', String(!active));
+      slide.tabIndex = active ? 0 : -1;
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('is-active', i === current);
+      dot.setAttribute('aria-pressed', String(i === current));
+    });
+  };
+
+  const stop = () => {
+    if (intervalId !== null) window.clearInterval(intervalId);
+    intervalId = null;
+  };
+  const start = () => {
+    stop();
+    if (!prefersReducedMotion.matches && !document.hidden && !rotator.matches(':hover') && !rotator.contains(document.activeElement)) {
+      intervalId = window.setInterval(() => show(current + 1), 6000);
+    }
+  };
+
+  dots.forEach((dot, i) => dot.addEventListener('click', () => {
+    show(i);
+    start();
+  }));
+  rotator.addEventListener('mouseenter', stop);
+  rotator.addEventListener('mouseleave', start);
+  rotator.addEventListener('focusin', stop);
+  rotator.addEventListener('focusout', () => window.setTimeout(start, 0));
+  document.addEventListener('visibilitychange', start);
+  prefersReducedMotion.addEventListener?.('change', start);
+
+  show(0);
+  start();
+});
