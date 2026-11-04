@@ -1177,3 +1177,14 @@ body.theme-real{
   .featured-rotator > .featured-slide,
   .featured-rotator-dot{transition:none}
 }
+
+/* Manchester City in-possession clips: each slide carries its analysis */
+.city-possession-slideshow .city-video-analysis{
+  padding:22px 26px 26px;
+  border-top:1px solid var(--line);
+}
+.city-possession-slideshow .city-video-analysis h3{margin:0 0 12px}
+.city-possession-slideshow .city-video-analysis p{margin:0}
+@media(max-width:680px){
+  .city-possession-slideshow .city-video-analysis{padding:18px}
+}
