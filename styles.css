@@ -1265,3 +1265,20 @@ body.theme-city{
 @media(max-width:680px){
   .theme-city .article-hero{padding:24px 16px}
 }
+
+/* Readable text on Manchester City's video analysis panels */
+.theme-city .city-video-analysis{
+  padding:22px 26px 26px;
+  border-top:1px solid #b7cfde;
+  background:linear-gradient(180deg,#dceaf3 0%,#cfe0eb 100%);
+}
+.theme-city .city-video-analysis h3{
+  margin:0 0 12px;
+  color:#163954;
+}
+.theme-city .city-video-analysis p{
+  margin:0 0 14px;
+  color:#294b63;
+}
+.theme-city .city-video-analysis p:last-child{margin-bottom:0}
+.theme-city .city-video-analysis strong{color:#102c43}
