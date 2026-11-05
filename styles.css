@@ -1188,3 +1188,80 @@ body.theme-real{
 @media(max-width:680px){
   .city-possession-slideshow .city-video-analysis{padding:18px}
 }
+
+/* Manchester City 2022/23 — sky blue, navy and soft white */
+body.theme-city{
+  --bg:#deedf6;
+  --panel:#edf5fa;
+  --panel-2:#d8e9f3;
+  --line:#bbd1df;
+  --text:#12283a;
+  --muted:#4b6779;
+  --accent:#326d9a;
+  --accent-2:#1c2c5b;
+  color:var(--text);
+  background:
+    radial-gradient(ellipse at 16% 18%,rgba(108,171,221,.25),transparent 36%),
+    radial-gradient(ellipse at 88% 12%,rgba(28,44,91,.12),transparent 35%),
+    radial-gradient(ellipse at 65% 88%,rgba(105,170,214,.18),transparent 40%),
+    linear-gradient(180deg,#f3f9fd 0%,#deedf6 50%,#d1e5f1 100%);
+  background-attachment:fixed;
+}
+.theme-city .site-header{
+  background:rgba(240,249,253,.92);
+  border-bottom:1px solid #bad1e1;
+  box-shadow:0 4px 18px rgba(21,48,71,.06);
+}
+.theme-city .brand{color:#102538}
+.theme-city .nav a{color:#486477}
+.theme-city .nav a.active,.theme-city .nav a:hover{color:#1c2c5b}
+.theme-city .nav-toggle{color:#102538;background:#eff8fc;border-color:#bdd5e4}
+.theme-city .article-hero{
+  border-left:4px solid #6cabdd;
+  padding:28px 26px 34px;
+  border-bottom:1px solid #bfd6e4;
+  background:linear-gradient(115deg,rgba(255,255,255,.65),rgba(108,171,221,.17));
+  box-shadow:0 8px 25px rgba(20,53,76,.06);
+}
+.theme-city .article-hero h1,.theme-city .prose h2{color:#102538}
+.theme-city .article-hero .eyebrow,.theme-city .tag,.theme-city .series-link{color:#1c4775}
+.theme-city .series-link:hover,.theme-city .text-link:hover{color:#3188c0}
+.theme-city .prose h2{border-left:4px solid #6cabdd;padding-left:18px}
+.theme-city .prose h3{color:#234d6b}
+.theme-city .prose p{color:#3a596c}
+.theme-city .prose strong{color:#102538}
+.theme-city .page-copy,.theme-city .article-meta{color:#507085}
+.theme-city .article-cover,.theme-city .analysis-slideshow,.theme-city .media-block,.theme-city .video-slideshow{
+  border:1px solid #b8d2e2;
+  border-top:3px solid #6cabdd;
+  border-radius:18px;
+  background:linear-gradient(155deg,#f6fbfe,#deecf6);
+  box-shadow:0 14px 34px rgba(21,48,71,.10);
+}
+.theme-city .video-slideshow-footer,.theme-city .slideshow-footer{
+  background:linear-gradient(90deg,#eaf5fc,#d9eaf6,#e9f4fb);
+  border-top:1px solid #bfd7e5;
+  color:#294b63;
+}
+.theme-city .video-counter,.theme-city .slide-counter{color:#4a6a7d}
+.theme-city .video-arrow,.theme-city .slide-arrow{
+  background:#f1f9fd;
+  color:#102538;
+  border:1px solid #bfd7e5;
+}
+.theme-city .video-arrow:hover,.theme-city .slide-arrow:hover{
+  background:#d9edf8;
+  border-color:#6cabdd;
+  color:#1c2c5b;
+}
+.theme-city .slide-dots .dot{background:#aac8da}
+.theme-city .slide-dots .dot.active{background:#428dbb}
+.theme-city .text-link{color:#1c4775}
+.theme-city .site-footer{
+  background:rgba(230,243,250,.85);
+  border-top:1px solid #bbd5e4;
+}
+.theme-city .site-footer p,.theme-city .site-footer a{color:#4a6679}
+@media(max-width:680px){
+  .theme-city .article-hero{padding:24px 16px}
+}
