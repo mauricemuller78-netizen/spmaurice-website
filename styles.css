@@ -1282,3 +1282,78 @@ body.theme-city{
 }
 .theme-city .city-video-analysis p:last-child{margin-bottom:0}
 .theme-city .city-video-analysis strong{color:#102c43}
+
+/* Chelsea 2020/21 — royal blue, deep navy and clean white */
+body.theme-chelsea{
+  --bg:#071a3a;
+  --panel:#0b2c63;
+  --panel-2:#103d84;
+  --line:#2e5aa0;
+  --text:#f4f8ff;
+  --muted:#c0d2ef;
+  --accent:#6ea8ff;
+  --accent-2:#ffffff;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 18% 16%,rgba(24,79,160,.34),transparent 34%),
+    radial-gradient(circle at 84% 12%,rgba(4,23,56,.55),transparent 32%),
+    linear-gradient(180deg,#06152f 0%,#0a2b61 48%,#071a3a 100%);
+  background-attachment:fixed;
+}
+.theme-chelsea .site-header{
+  background:rgba(5,21,47,.92);
+  border-bottom:1px solid rgba(110,168,255,.25);
+  box-shadow:0 4px 18px rgba(0,0,0,.2);
+  backdrop-filter:blur(10px);
+}
+.theme-chelsea .brand{color:#fff}
+.theme-chelsea .nav a{color:#c6d7f3}
+.theme-chelsea .nav a.active,.theme-chelsea .nav a:hover{color:#fff}
+.theme-chelsea .nav-toggle{color:#fff;background:#0b2c63;border-color:#2e5aa0}
+.theme-chelsea .article-hero{
+  border-left:4px solid #6ea8ff;
+  padding:28px 26px 34px;
+  border-bottom:1px solid #2e5aa0;
+  background:linear-gradient(120deg,rgba(17,59,130,.72),rgba(6,24,56,.9));
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+}
+.theme-chelsea .article-hero h1,.theme-chelsea .prose h2{color:#fff}
+.theme-chelsea .article-hero .eyebrow,.theme-chelsea .tag,.theme-chelsea .series-link{color:#9fc4ff}
+.theme-chelsea .page-copy,.theme-chelsea .article-meta{color:#c8d8ef}
+.theme-chelsea .prose h2{border-left:4px solid #6ea8ff;padding-left:18px}
+.theme-chelsea .prose h3{color:#dce9ff}
+.theme-chelsea .prose p{color:#c7d6eb}
+.theme-chelsea .prose strong{color:#fff}
+.theme-chelsea .article-cover,.theme-chelsea .analysis-slideshow,.theme-chelsea .media-block,.theme-chelsea .video-slideshow{
+  border:1px solid #2f5fa6;
+  border-top:3px solid #6ea8ff;
+  border-radius:18px;
+  background:linear-gradient(160deg,#0a2a5f,#071a3a);
+  box-shadow:0 14px 36px rgba(0,0,0,.28);
+}
+.theme-chelsea .slideshow-footer,.theme-chelsea .video-slideshow-footer{
+  background:linear-gradient(90deg,#0a2a5f,#0e397a,#0a2a5f);
+  border-top:1px solid #2f5fa6;
+  color:#dbe8fb;
+}
+.theme-chelsea .slide-arrow,.theme-chelsea .video-arrow{
+  background:#0d3472;
+  color:#fff;
+  border:1px solid #4f79bd;
+}
+.theme-chelsea .slide-arrow:hover,.theme-chelsea .video-arrow:hover{
+  background:#144a98;
+  border-color:#7fb0ff;
+}
+.theme-chelsea .slide-dots .dot{background:#496fae}
+.theme-chelsea .slide-dots .dot.active{background:#9cc1ff}
+.theme-chelsea .text-link{color:#9fc4ff}
+.theme-chelsea .text-link:hover,.theme-chelsea .series-link:hover{color:#fff}
+.theme-chelsea .site-footer{
+  background:rgba(4,18,42,.9);
+  border-top:1px solid #2b5596;
+}
+.theme-chelsea .site-footer p,.theme-chelsea .site-footer a{color:#bfd1ed}
+@media(max-width:680px){
+  .theme-chelsea .article-hero{padding:24px 16px}
+}
