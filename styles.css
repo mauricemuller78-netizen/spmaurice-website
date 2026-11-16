@@ -1357,3 +1357,31 @@ body.theme-chelsea{
 @media(max-width:680px){
   .theme-chelsea .article-hero{padding:24px 16px}
 }
+
+/* Single video sizing */
+.single-video-block{
+  width:min(100%, 920px);
+  margin:30px auto 34px;
+  overflow:hidden;
+}
+.single-video-block > video{
+  display:block;
+  width:100%;
+  max-height:520px;
+  aspect-ratio:16 / 9;
+  object-fit:contain;
+  background:#000;
+}
+.single-video-block .city-video-analysis{
+  width:100%;
+}
+@media(max-width:680px){
+  .single-video-block{
+    width:100%;
+    margin:24px auto 28px;
+  }
+  .single-video-block > video{
+    max-height:none;
+    aspect-ratio:16 / 9;
+  }
+}
