@@ -1440,3 +1440,63 @@ body.theme-chelsea{
     padding:18px;
   }
 }
+
+/* Final standalone-video override: beats the wide .article-shell .prose .media-block rule */
+.article-shell .prose .media-block.single-video-block{
+  display:block;
+  width:min(920px, 100%);
+  max-width:920px;
+  min-width:0;
+  height:auto;
+  min-height:0;
+  aspect-ratio:auto;
+  margin:30px auto 34px;
+  padding:0;
+  overflow:visible;
+  box-sizing:border-box;
+}
+.article-shell .prose .media-block.single-video-block > video{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:520px;
+  object-fit:contain;
+  background:#000;
+  border-radius:15px 15px 0 0;
+}
+.article-shell .prose .media-block.single-video-block .city-video-analysis{
+  display:block;
+  position:static;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:none;
+  min-height:0;
+  overflow:visible;
+  box-sizing:border-box;
+  padding:22px 26px 26px;
+  border-radius:0 0 15px 15px;
+}
+.article-shell .prose .media-block.single-video-block .city-video-analysis p,
+.article-shell .prose .media-block.single-video-block .city-video-analysis h3{
+  display:block;
+  width:auto;
+  max-width:none;
+  height:auto;
+  overflow:visible;
+  white-space:normal;
+}
+@media(max-width:680px){
+  .article-shell .prose .media-block.single-video-block{
+    width:100%;
+    max-width:100%;
+    margin:24px 0 28px;
+  }
+  .article-shell .prose .media-block.single-video-block > video{
+    max-height:none;
+  }
+  .article-shell .prose .media-block.single-video-block .city-video-analysis{
+    padding:18px;
+  }
+}
