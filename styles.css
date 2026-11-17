@@ -1500,3 +1500,62 @@ body.theme-chelsea{
     padding:18px;
   }
 }
+
+/* Bayern Munich 2019/20 — deep red, white and dark navy */
+body.theme-bayern{
+  --bg:#23060b;
+  --panel:#3a0b12;
+  --panel-2:#5a101b;
+  --line:#7f2632;
+  --text:#fff7f8;
+  --muted:#e7c7cc;
+  --accent:#f15b68;
+  --accent-2:#ffffff;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 16% 18%,rgba(190,28,44,.28),transparent 34%),
+    radial-gradient(circle at 86% 12%,rgba(14,22,54,.34),transparent 34%),
+    linear-gradient(180deg,#170409 0%,#3a0a12 48%,#22060b 100%);
+  background-attachment:fixed;
+}
+.theme-bayern .site-header{
+  background:rgba(24,4,9,.92);
+  border-bottom:1px solid rgba(241,91,104,.24);
+  box-shadow:0 4px 18px rgba(0,0,0,.22);
+  backdrop-filter:blur(10px);
+}
+.theme-bayern .brand{color:#fff}
+.theme-bayern .nav a{color:#e4c7cb}
+.theme-bayern .nav a.active,.theme-bayern .nav a:hover{color:#fff}
+.theme-bayern .nav-toggle{color:#fff;background:#4b0d16;border-color:#8c2c38}
+.theme-bayern .article-hero{
+  border-left:4px solid #f15b68;
+  padding:28px 26px 34px;
+  border-bottom:1px solid #7f2632;
+  background:linear-gradient(120deg,rgba(94,14,25,.76),rgba(29,5,10,.92));
+  box-shadow:0 10px 30px rgba(0,0,0,.24);
+}
+.theme-bayern .article-hero h1,.theme-bayern .prose h2{color:#fff}
+.theme-bayern .article-hero .eyebrow,.theme-bayern .tag,.theme-bayern .series-link{color:#ff9ca5}
+.theme-bayern .page-copy,.theme-bayern .article-meta{color:#e4c6cb}
+.theme-bayern .prose h2{border-left:4px solid #f15b68;padding-left:18px}
+.theme-bayern .prose h3{color:#ffe2e5}
+.theme-bayern .prose p{color:#e6cbd0}
+.theme-bayern .prose strong{color:#fff}
+.theme-bayern .article-cover,.theme-bayern .analysis-slideshow,.theme-bayern .media-block,.theme-bayern .video-slideshow{
+  border:1px solid #7c2834;
+  border-top:3px solid #f15b68;
+  border-radius:18px;
+  background:linear-gradient(160deg,#4b0e17,#21060b);
+  box-shadow:0 14px 36px rgba(0,0,0,.3);
+}
+.theme-bayern .text-link{color:#ff9ca5}
+.theme-bayern .text-link:hover,.theme-bayern .series-link:hover{color:#fff}
+.theme-bayern .site-footer{
+  background:rgba(23,4,9,.9);
+  border-top:1px solid #6f222d;
+}
+.theme-bayern .site-footer p,.theme-bayern .site-footer a{color:#dfc3c8}
+@media(max-width:680px){
+  .theme-bayern .article-hero{padding:24px 16px}
+}
