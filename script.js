@@ -19,6 +19,19 @@ document.querySelectorAll('[data-slideshow]').forEach((gallery) => {
     slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
     dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
     if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+
+    const copyPanels = [...gallery.querySelectorAll('[data-slide-copy]')];
+    copyPanels.forEach((panel) => {
+      const rule = panel.dataset.slideCopy || '';
+      let visible = false;
+      if (rule.includes('-')) {
+        const [from, to] = rule.split('-').map(Number);
+        visible = current >= from && current <= to;
+      } else {
+        visible = current === Number(rule);
+      }
+      panel.hidden = !visible;
+    });
   };
 
   gallery.querySelector('.prev')?.addEventListener('click', () => show(current - 1));
