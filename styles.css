@@ -1559,3 +1559,61 @@ body.theme-bayern{
 @media(max-width:680px){
   .theme-bayern .article-hero{padding:24px 16px}
 }
+
+/* Bayern slideshow copy: one text block for slide 1, one for slides 2–5 */
+.theme-bayern .analysis-slideshow{
+  height:auto;
+  max-height:none;
+  overflow:hidden;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  box-sizing:border-box;
+  border-top:1px solid #7c2834;
+  background:linear-gradient(180deg,#3b0c14 0%,#26070d 100%);
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel{
+  display:block;
+  position:static;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  max-height:none;
+  min-height:0;
+  box-sizing:border-box;
+  padding:24px 28px 28px;
+  overflow:visible;
+  white-space:normal;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel[hidden]{
+  display:none !important;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel h3{
+  margin:0 0 14px;
+  color:#fff;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel p{
+  display:block;
+  width:auto;
+  max-width:none;
+  height:auto;
+  margin:0 0 14px;
+  color:#e6cbd0;
+  white-space:normal;
+  overflow:visible;
+  overflow-wrap:break-word;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel p:last-child{
+  margin-bottom:0;
+}
+.theme-bayern .analysis-slideshow .slideshow-copy-panel strong{
+  color:#fff;
+}
+@media(max-width:680px){
+  .theme-bayern .analysis-slideshow .slideshow-copy-panel{
+    padding:18px;
+  }
+}
