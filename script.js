@@ -31,6 +31,7 @@ document.querySelectorAll('[data-slideshow]').forEach((gallery) => {
         visible = current === Number(rule);
       }
       panel.hidden = !visible;
+      panel.style.display = visible ? 'block' : 'none';
     });
   };
 
@@ -46,6 +47,8 @@ document.querySelectorAll('[data-slideshow]').forEach((gallery) => {
     if (Math.abs(dx) > 45) show(current + (dx < 0 ? 1 : -1));
     startX = null;
   }, {passive:true});
+
+  show(0);
 });
 
 
