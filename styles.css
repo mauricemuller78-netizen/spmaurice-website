@@ -1617,3 +1617,61 @@ body.theme-bayern{
     padding:18px;
   }
 }
+
+/* Liverpool 2018/19 — deep red, black and white */
+body.theme-liverpool{
+  --bg:#160708;
+  --panel:#240b0d;
+  --panel-2:#341014;
+  --line:#5a2328;
+  --text:#fff8f8;
+  --muted:#dfc4c6;
+  --accent:#e63946;
+  --accent-2:#ffffff;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 18% 16%,rgba(198,24,38,.22),transparent 34%),
+    radial-gradient(circle at 84% 10%,rgba(0,0,0,.38),transparent 34%),
+    linear-gradient(180deg,#100405 0%,#24090c 50%,#160708 100%);
+  background-attachment:fixed;
+}
+.theme-liverpool .site-header{
+  background:rgba(16,4,5,.92);
+  border-bottom:1px solid rgba(230,57,70,.24);
+  backdrop-filter:blur(10px);
+}
+.theme-liverpool .brand{color:#fff}
+.theme-liverpool .nav a{color:#d9bfc2}
+.theme-liverpool .nav a.active,.theme-liverpool .nav a:hover{color:#fff}
+.theme-liverpool .nav-toggle{color:#fff;background:#2c0d10;border-color:#67252c}
+.theme-liverpool .article-hero{
+  border-left:4px solid #e63946;
+  padding:28px 26px 34px;
+  border-bottom:1px solid #5a2328;
+  background:linear-gradient(120deg,rgba(82,15,22,.78),rgba(22,5,7,.94));
+  box-shadow:0 10px 30px rgba(0,0,0,.28);
+}
+.theme-liverpool .article-hero h1,.theme-liverpool .prose h2{color:#fff}
+.theme-liverpool .article-hero .eyebrow,.theme-liverpool .tag,.theme-liverpool .series-link{color:#ff8b95}
+.theme-liverpool .page-copy,.theme-liverpool .article-meta{color:#dfc4c6}
+.theme-liverpool .prose h2{border-left:4px solid #e63946;padding-left:18px}
+.theme-liverpool .prose h3{color:#ffe0e3}
+.theme-liverpool .prose p{color:#e6cdd0}
+.theme-liverpool .prose strong{color:#fff}
+.theme-liverpool .article-cover,.theme-liverpool .analysis-slideshow,.theme-liverpool .media-block,.theme-liverpool .video-slideshow{
+  border:1px solid #5a2328;
+  border-top:3px solid #e63946;
+  border-radius:18px;
+  background:linear-gradient(160deg,#2c0d11,#150507);
+  box-shadow:0 14px 36px rgba(0,0,0,.3);
+}
+.theme-liverpool .text-link{color:#ff8b95}
+.theme-liverpool .text-link:hover,.theme-liverpool .series-link:hover{color:#fff}
+.theme-liverpool .site-footer{
+  background:rgba(16,4,5,.9);
+  border-top:1px solid #5a2328;
+}
+.theme-liverpool .site-footer p,.theme-liverpool .site-footer a{color:#d9bfc2}
+@media(max-width:680px){
+  .theme-liverpool .article-hero{padding:24px 16px}
+}
